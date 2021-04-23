@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-2by1">
+                <img src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluZyUyMHBvbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></img>
+              </figure>
+            </div>
+            <header class="card-header">
+              <p class="card-header-title">
+                Ping Pong Score Keeper
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <h1 class="title-is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                <p class="subtitle">Use the buttons below to keep score.</p>
+                <label for="playto" class="label is-large is-inline">Playing To</label>
+                <div class="select is-rounded">
+                  <select name="playto" id="playto">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="9">9</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <footer class="card-footer">
+              <button id="p1Button" class="is-primary button card-footer-item">+1 Player One</button>
+              <button id="p2Button" class="is-info button card-footer-item">+1 Player Two</button>
+              <button id="reset" class="is-danger button card-footer-item">Reset</button>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
